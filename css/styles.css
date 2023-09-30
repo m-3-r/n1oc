@@ -42,7 +42,6 @@ html {
 }
 
 body, p {
-	color: #0a5f3c; 
 	font: 400 1rem/1.625rem "Montserrat", sans-serif;
 }
 
@@ -573,7 +572,7 @@ input[type='checkbox'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: gold;
+	background: darkgreen;
 }
 
 .spinner {
@@ -1400,7 +1399,7 @@ input[type='checkbox'] {
 .form-2 {
 	padding-top: 8.125rem;
 	padding-bottom: 5.75rem;
-	background-color: darkgreen;
+	background-color: green;
 }
 
 .form-2 h3 {
