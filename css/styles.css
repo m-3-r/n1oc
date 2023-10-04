@@ -634,8 +634,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 5.5625rem;
-	height: 1.875rem;
+    width: 100px;
+	height: 100px;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -1615,6 +1615,11 @@ a:hover.back-to-top {
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/	
+@media only screen and (max-width: 450px) {
+	.logo-image{
+		display: none;
+	}
+  }
 /* Min-width width 768px */
 @media (min-width: 768px) {
 	
