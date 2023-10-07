@@ -1617,11 +1617,7 @@ a:hover.back-to-top {
 /*****************************/	
 @media only screen and (max-width: 450px) {
 	.logo-image{
-		display: block;
-		margin: auto;
-	}
-	.htext{
-		margin-top: 100px;
+		display: none;
 	}
   }
 /* Min-width width 768px */
@@ -2145,9 +2141,3 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
-marquee{
-	padding: 6px;
-	color: #f2f53e;
-	font-weight: bolder;
-	font-size: 20px;
-}
