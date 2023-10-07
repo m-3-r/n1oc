@@ -1621,7 +1621,7 @@ a:hover.back-to-top {
 		margin: auto;
 	}
 	.htext{
-		margin-top: 100px;
+		margin-top: 200px;
 	}
   }
 /* Min-width width 768px */
@@ -2150,4 +2150,11 @@ marquee{
 	color: #f2f53e;
 	font-weight: bolder;
 	font-size: 20px;
+}
+table, tr, td, th{
+	border: 2px solid gold;
+	border-collapse: collapse;
+	padding: 5px;
+	color: white;
+	margin: auto;
 }
