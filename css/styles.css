@@ -756,6 +756,7 @@ input[type='checkbox'] {
 	background: darkgreen;
 	background-size: cover;
 	text-align: center;
+	margin-top: 40px;
 }
 
 .header .countdown {
@@ -788,7 +789,7 @@ input[type='checkbox'] {
 
 .header h1 {
 	margin-bottom: 0.75rem;
-	color: goldenrod;
+	color: gold;
 }
 
 .header .p-large {
@@ -2157,4 +2158,46 @@ table, tr, td, th{
 	padding: 5px;
 	color: white;
 	margin: auto;
+}
+.popup {
+	z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(300px, 90vw, 500px);
+    background-color: rgb(59, 0, 221);
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+}
+.popup img {
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup img:active {
+    transform: scale(.9);
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
 }
