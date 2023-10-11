@@ -13,8 +13,8 @@ if (empty($_POST["terms"])) {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "yourname@domain.com";
-$Subject = "New newsletter subscription from Corso landing page";
+$EmailTo = "contact@nextcadet.com";
+$Subject = "New newsletter subscription from student";
 
 // prepare email body text
 $Body = "";
