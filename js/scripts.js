@@ -427,3 +427,10 @@
 	});
 
 })(jQuery);
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) { //use `this`, not `document`
+        $('.logo-image').css({
+            'display': 'none'
+        });
+    }
+});

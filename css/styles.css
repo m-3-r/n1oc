@@ -1617,7 +1617,7 @@ a:hover.back-to-top {
 /*****************************/	
 @media only screen and (max-width: 450px) {
 	.logo-image{
-		display: block;
+		display: inline;
 		margin: auto;
 	}
 	.htext{
