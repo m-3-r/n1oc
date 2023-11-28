@@ -45,7 +45,7 @@
     /* Countdown Timer - The Final Countdown */
 	$('#clock').countdown('2023/12/23 10:00:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
-		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
+		var format = '<span class="counter-number">%D<br><span class="timer-text">দিন</span></span><span class="counter-number">%H<br><span class="timer-text">ঘন্টা</span></span><span class="counter-number">%M<br><span class="timer-text">মিনিট</span></span><span class="counter-number">%S<br><span class="timer-text">সেকেন্ড</span></span>';
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
@@ -434,3 +434,19 @@ $(window).scroll(function() {
         });
     }
 });
+
+// var countDownDate = new Date("Dec 23, 2023 10:00:00").getTime();
+//             var x = setInterval(function() {
+//             var now = new Date().getTime();
+//             var distance = countDownDate - now;
+//             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//             document.getElementById("demo").innerHTML = days + "দিন " + hours + "ঘন্টা "
+//             + minutes + "মিঃ " + seconds + "সেঃ ";
+//             if (distance < 0) {
+//                 clearInterval(x);
+//                 document.getElementById("demo").innerHTML = "নির্ধারিত সময় শেষ হয়ে গেছে";
+//             }
+//             }, 1000);
