@@ -43,7 +43,7 @@
 
 
     /* Countdown Timer - The Final Countdown */
-	$('#clock').countdown('2023/12/23 10:00:00') /* change here your "countdown to" date */
+	$('#clock').countdown('2024/01/01 00:00:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">দিন</span></span><span class="counter-number">%H<br><span class="timer-text">ঘন্টা</span></span><span class="counter-number">%M<br><span class="timer-text">মিনিট</span></span><span class="counter-number">%S<br><span class="timer-text">সেকেন্ড</span></span>';
 		$(this).html(event.strftime(format));
